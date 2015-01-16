@@ -1145,6 +1145,16 @@
 (define non-primitive?
   (lambda(l)
     (eq? (first l) (quote non-primitive))))
+    
+(define apply
+  (lambda (fun vals)
+    (cond
+      ((primitive? fun)
+       (apply-primitive
+         (second fun) vals))
+      ((non-primitive? fun)
+        (apply-closure
+          (second fun) vals)))))
 
 (define applyfun
   (lambda (fun vals)
