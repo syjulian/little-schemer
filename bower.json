@@ -1,0 +1,22 @@
+{
+  "name": "little-schemer",
+  "version": "0.0.0",
+  "homepage": "https://github.com/syjulian/little-schemer",
+  "authors": [
+    "Julian Sy <juliansy0@gmail.com>"
+  ],
+  "description": "Me coding along when I read Little Schemer",
+  "main": "little-schemer.rkt",
+  "keywords": [
+    "little",
+    "schemer"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
